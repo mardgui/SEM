@@ -1,0 +1,11 @@
+bias_attribute: race
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+hidden_num: 2
+method: zsdebias
+model_ID: ViT-L/14@336px
+normalize: false
+query_type: stereotype
+retrieval_K: 500
+seed: 0
+task: retrieval

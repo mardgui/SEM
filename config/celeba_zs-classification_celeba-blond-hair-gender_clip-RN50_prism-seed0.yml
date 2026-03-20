@@ -1,0 +1,15 @@
+dataset_name: celeba
+dataset_path: ./data/CelebA
+task: zs_classification
+class_setting: celeba_blond_hair_gender
+model_ID: RN50
+method: prism
+normalize: true
+epochs: 1
+num_bases: 0
+num_samples: 100
+seed: 0
+lr: 0.01
+batch_size: 64
+wd: 0.0
+init_weight: random

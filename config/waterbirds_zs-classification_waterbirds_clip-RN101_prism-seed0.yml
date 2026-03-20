@@ -1,0 +1,15 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: RN101
+method: prism
+normalize: true
+epochs: 1
+num_bases: 0
+num_samples: 500
+seed: 0
+lr: 0.1
+batch_size: 64
+wd: 0.0
+init_weight: random

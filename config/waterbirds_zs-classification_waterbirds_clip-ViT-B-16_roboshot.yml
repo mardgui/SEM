@@ -1,0 +1,9 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: ViT-B/16
+method: roboshot
+normalize: true
+reject_harmful: true
+accept_helpful: true

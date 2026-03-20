@@ -1,0 +1,9 @@
+dataset_name: celeba
+dataset_path: ./data/CelebA
+task: zs_classification
+class_setting: celeba_blond_hair_gender
+model_ID: RN101
+method: sem
+sem_version: SEM_b
+normalize: true
+sae_weights_path: debiasing_methods/sae_weights/MSAE_RN101_512_16384_128x256x512_reverse.pth

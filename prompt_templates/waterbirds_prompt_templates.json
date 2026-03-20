@@ -1,0 +1,367 @@
+{
+  "extra prompts": {
+    "orth_proj": {
+      "spurious prompts": [
+        "This is a land background.",
+        "This is a picture of a forest.",
+        "This is a picture of a moutain.",
+        "This is a picture of a wood.",
+        "This is a water background.",
+        "This is a picture of an ocean.",
+        "This is a picture of a beach.",
+        "This is a picture of a port."
+      ]
+    },
+    "orth_cali": {
+      "spurious prompts": [
+        "This is a land background.",
+        "This is a picture of a forest.",
+        "This is a picture of a moutain.",
+        "This is a picture of a wood.",
+        "This is a water background.",
+        "This is a picture of an ocean.",
+        "This is a picture of a beach.",
+        "This is a picture of a port."
+      ],
+      "candidate prompts": [
+        "This is a picture of a landbird with land background.",
+        "This is a picture of a landbird with water background.",
+        "This is a picture of a landbird in the ocean",
+        "This is a picture of a landbird in the water.",
+        "This is a picture of a landbird in the forest.",
+        "This is a picture of a waterbird with land background.",
+        "This is a picture of a waterbird with water background.",
+        "This is a picture of a waterbird in the ocean",
+        "This is a picture of a waterbird in the water.",
+        "This is a picture of a waterbird in the forest."
+      ],
+      "S": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "bendvlm": {
+      "spurious prompts": [
+        "This is a picture of a bird in a land background.",
+        "This is a picture of a bird in a water background."
+      ],
+      "augmentations": [
+        "This is a picture of a landbird in a land background.",
+        "This is a picture of a landbird in a water background.",
+        "This is a picture of a waterbird in a land background.",
+        "This is a picture of a waterbird in a water background."
+      ]
+    },
+    "prism": {},
+    "prism_mini": {
+      "spurious prompts": [
+        "This is a land background.",
+        "This is a picture of a forest.",
+        "This is a picture of a moutain.",
+        "This is a picture of a wood.",
+        "This is a water background.",
+        "This is a picture of an ocean.",
+        "This is a picture of a beach.",
+        "This is a picture of a port."
+      ]
+    },
+    "roboshot": {
+      "harmful prompts": [
+        [
+          "a bird with aquatic habitat",
+          "a bird with terrestrial habitat"
+        ],
+        [
+          "a bird with keratin feathers physiology",
+          "a bird with hydrophobic feathers physiology"
+        ],
+        [
+          "a bird with insects diet",
+          "a bird with fish diet"
+        ],
+        [
+          "a bird with longer wingspan flight",
+          "a bird with shorter wingspan flight"
+        ],
+        [
+          "a bird with coastal migration",
+          "a bird with inland migration"
+        ],
+        [
+          "a bird that lives in watery environments",
+          "a bird that lives on land."
+        ],
+        [
+          "a bird has feathers made of the protein",
+          "a bird's physiology with feathers that rep"
+        ],
+        [
+          "a bird that eats bugs.",
+          "a bird that eats mainly fish."
+        ],
+        [
+          "a bird with wings that span farther when",
+          "a bird with a smaller wingspan can"
+        ],
+        [
+          "a bird that migrates along coastlines",
+          "a bird that migrates to different areas"
+        ]
+      ],
+      "helpful prompts": [
+        [
+          "a bird with webbed feet",
+          "a bird with talons feet"
+        ],
+        [
+          "a bird with waterproof feathers",
+          "a bird with non-waterproof feathers"
+        ],
+        [
+          "a bird with larger size",
+          "a bird with smaller size"
+        ],
+        [
+          "a bird with darker color",
+          "a bird with lighter color"
+        ],
+        [
+          "a bird with longer bill",
+          "a bird with shorter bill"
+        ],
+        [
+          "a bird with wide beaks",
+          "a bird with narrow beaks"
+        ]
+      ]
+    },
+    "sem": {
+      "bias prompts": {
+        "land background": [
+          "An image with a land background.",
+          "A photo featuring a grassy field as the background.",
+          "A forest as the dominant background.",
+          "A background consisting of dry earth and sparse vegetation.",
+          "A background showing a rocky terrain.",
+          "The background is entirely land.",
+          "A dirt path winding through a landscape.",
+          "A background of trees and bushes.",
+          "A scene with a mountain range in the background.",
+          "A sandy dune forming the background.",
+          "A close-up of a land-based environment.",
+          "A background featuring a meadow.",
+          "A background showing a barren desert.",
+          "A background of dense foliage.",
+          "The ground is clearly visible in the background.",
+          "A scene set against a backdrop of land.",
+          "A background of soil and rocks.",
+          "A background of a plain.",
+          "A non-aquatic environment in the background.",
+          "A terrestrial background."
+        ],
+        "water background": [
+          "An image with a water background.",
+          "A photo featuring a large body of water as the background.",
+          "The ocean as the dominant background.",
+          "A background consisting of a lake.",
+          "A background showing a river.",
+          "The background is entirely water.",
+          "A calm body of water in the background.",
+          "A background of waves crashing.",
+          "A scene with a pond in the background.",
+          "A background of a vast sea.",
+          "A close-up of a water-based environment.",
+          "A background featuring a deep blue ocean.",
+          "A background showing a shallow stream.",
+          "A background of reflective water surface.",
+          "The water is clearly visible in the background.",
+          "A scene set against a backdrop of water.",
+          "A background of clear water.",
+          "A background of rippling water.",
+          "An aquatic environment in the background.",
+          "A marine background."
+        ]
+      },
+      "extra class prompts": [
+        [
+          "This is a picture of a landbird.",
+          "An image of a landbird.",
+          "A photo of a terrestrial bird.",
+          "A depiction of a bird that lives on land.",
+          "A photo of a songbird.",
+          "A photo of a perching bird.",
+          "A photo of a bird of prey.",
+          "A close-up portrait of a landbird.",
+          "A landbird on a plain background.",
+          "A creature that is a landbird."
+        ],
+        [
+          "This is a picture of a waterbird.",
+          "An image of a waterbird.",
+          "A photo of a waterfowl.",
+          "A depiction of a bird that lives near water.",
+          "A photo of a seabird.",
+          "A photo of a duck.",
+          "A bird with webbed feet.",
+          "A close-up portrait of a waterbird.",
+          "A waterbird on a plain background.",
+          "A creature that is a waterbird."
+        ]
+      ]
+    },
+    "bendsem": {
+      "bias prompts": {
+        "land background": [
+          "An image with a land background.",
+          "A photo featuring a grassy field as the background.",
+          "A forest as the dominant background.",
+          "A background consisting of dry earth and sparse vegetation.",
+          "A background showing a rocky terrain.",
+          "The background is entirely land.",
+          "A dirt path winding through a landscape.",
+          "A background of trees and bushes.",
+          "A scene with a mountain range in the background.",
+          "A sandy dune forming the background.",
+          "A close-up of a land-based environment.",
+          "A background featuring a meadow.",
+          "A background showing a barren desert.",
+          "A background of dense foliage.",
+          "The ground is clearly visible in the background.",
+          "A scene set against a backdrop of land.",
+          "A background of soil and rocks.",
+          "A background of a plain.",
+          "A non-aquatic environment in the background.",
+          "A terrestrial background."
+        ],
+        "water background": [
+          "An image with a water background.",
+          "A photo featuring a large body of water as the background.",
+          "The ocean as the dominant background.",
+          "A background consisting of a lake.",
+          "A background showing a river.",
+          "The background is entirely water.",
+          "A calm body of water in the background.",
+          "A background of waves crashing.",
+          "A scene with a pond in the background.",
+          "A background of a vast sea.",
+          "A close-up of a water-based environment.",
+          "A background featuring a deep blue ocean.",
+          "A background showing a shallow stream.",
+          "A background of reflective water surface.",
+          "The water is clearly visible in the background.",
+          "A scene set against a backdrop of water.",
+          "A background of clear water.",
+          "A background of rippling water.",
+          "An aquatic environment in the background.",
+          "A marine background."
+        ]
+      },
+      "extra class prompts": [
+        [
+          "This is a picture of a landbird.",
+          "An image of a landbird.",
+          "A photo of a terrestrial bird.",
+          "A depiction of a bird that lives on land.",
+          "A photo of a songbird.",
+          "A photo of a perching bird.",
+          "A photo of a bird of prey.",
+          "A close-up portrait of a landbird.",
+          "A landbird on a plain background.",
+          "A creature that is a landbird."
+        ],
+        [
+          "This is a picture of a waterbird.",
+          "An image of a waterbird.",
+          "A photo of a waterfowl.",
+          "A depiction of a bird that lives near water.",
+          "A photo of a seabird.",
+          "A photo of a duck.",
+          "A bird with webbed feet.",
+          "A close-up portrait of a waterbird.",
+          "A waterbird on a plain background.",
+          "A creature that is a waterbird."
+        ]
+      ]
+    },
+    "vanilla": {},
+    "zsdebias": {}
+  }
+}

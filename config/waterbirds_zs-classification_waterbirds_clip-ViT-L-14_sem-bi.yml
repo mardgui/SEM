@@ -1,0 +1,9 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: ViT-L/14@336px
+method: sem
+sem_version: SEM_bi
+normalize: true
+sae_weights_path: debiasing_methods/sae_weights/MSAE_ViT-L-14_768_16384_256x512_reverse.pth

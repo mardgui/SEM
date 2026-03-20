@@ -1,0 +1,17 @@
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: race
+model_ID: ViT-B/16
+method: prism
+normalize: true
+epochs: 1
+num_bases: 0
+num_samples: 200
+seed: 0
+lr: 0.01
+batch_size: 64
+wd: 0.0
+init_weight: random

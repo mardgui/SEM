@@ -1,0 +1,9 @@
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: race
+model_ID: ViT-L/14@336px
+method: orth_proj
+normalize: true

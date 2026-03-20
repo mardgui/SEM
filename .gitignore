@@ -1,0 +1,88 @@
+# ==============
+# Python
+# ==============
+# Byte-compiled / optimized / C-extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# ==============
+# Virtual Environments
+# ==============
+# Common names for virtual environments
+.venv/
+venv/
+env/
+
+
+# ==============
+# IDE / Editor
+# ==============
+# Ignore editor-specific settings
+.vscode/
+
+
+# ==============
+# Experiment Tracking
+# ==============
+# Ignore Weights & Biases logs
+wandb/
+
+
+# ==============
+# Data
+# ==============
+# Ignore specific large subdirectories and files from the CelebA dataset.
+# This allows other files (like index files) in data/CelebA/ to be tracked.
+data/CelebA/Anno/
+data/CelebA/Eval/
+data/CelebA/Img/
+data/CelebA/README.txt
+
+# Same for COCO
+data/COCO/train2017/
+data/COCO/instances_train2017.json
+
+# Same for FACET
+data/FACET/images/
+data/FACET/annotations.csv
+
+# Same for FairFace
+data/FairFace/train/
+data/FairFace/val/
+data/FairFace/*.csv
+
+# Same for ImageNet-100
+data/ImageNet-100/train/
+
+# Same for LFW
+data/LFW/images/
+
+# Same for UTKFace
+data/UTKFace/images/
+
+# Same for Waterbirds
+data/Waterbirds/waterbird_complete95_forest2water2/
+
+# Ignore downloaded archives and generated data files by pattern (but keep generated indices for reproducibility)
+data/*/*.zip
+data/*/*_embeddings.npy
+data/*/*.feather
+
+
+# ==============
+# Model Weights
+# ==============
+# SAE weights are included in the GitHub release
+debiasing_methods/sae_weights/*.pth
+debiasing_methods/sae_weights/*.zip
+
+# PRISM weights are included in the GitHub release and can be obtained by running the PRISM training script
+debiasing_methods/prism_weights/*.pth
+debiasing_methods/prism_weights/*.zip
+
+# ZSDebias weights are included in the GitHub release and can be obtained by running the ZSDebias training script
+debiasing_methods/zsdebias_weights/*.pth
+debiasing_methods/zsdebias_weights/*.zip

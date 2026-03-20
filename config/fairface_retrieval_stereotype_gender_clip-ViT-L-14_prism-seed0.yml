@@ -1,0 +1,17 @@
+dataset_name: fairface
+dataset_path: ./data/FairFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: gender
+model_ID: ViT-L/14@336px
+method: prism
+normalize: true
+epochs: 1
+num_bases: 0
+num_samples: 100
+seed: 0
+lr: 0.01
+batch_size: 64
+wd: 0.0
+init_weight: random

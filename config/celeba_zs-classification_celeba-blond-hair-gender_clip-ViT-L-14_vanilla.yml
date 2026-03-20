@@ -1,0 +1,7 @@
+dataset_name: celeba
+dataset_path: ./data/CelebA
+task: zs_classification
+class_setting: celeba_blond_hair_gender
+model_ID: ViT-L/14@336px
+method: vanilla
+normalize: true

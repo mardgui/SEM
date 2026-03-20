@@ -1,0 +1,9 @@
+dataset_name: celeba
+dataset_path: ./data/CelebA
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: gender
+model_ID: RN50
+method: prism_mini
+normalize: true

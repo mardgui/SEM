@@ -1,0 +1,10 @@
+dataset_name: fairface
+dataset_path: ./data/FairFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: race
+model_ID: ViT-B/16
+method: orth_cali
+normalize: true
+lam: 1000

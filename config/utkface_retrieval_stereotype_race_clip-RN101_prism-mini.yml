@@ -1,0 +1,9 @@
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: race
+model_ID: RN101
+method: prism_mini
+normalize: true

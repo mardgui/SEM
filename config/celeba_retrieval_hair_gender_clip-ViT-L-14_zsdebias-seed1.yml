@@ -1,0 +1,11 @@
+bias_attribute: gender
+dataset_name: celeba
+dataset_path: ./data/CelebA
+hidden_num: 2
+method: zsdebias
+model_ID: ViT-L/14@336px
+normalize: false
+query_type: hair
+retrieval_K: 500
+seed: 1
+task: retrieval

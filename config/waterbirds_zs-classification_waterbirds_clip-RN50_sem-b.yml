@@ -1,0 +1,9 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: RN50
+method: sem
+sem_version: SEM_b
+normalize: true
+sae_weights_path: debiasing_methods/sae_weights/MSAE_RN50_1024_16384_512x1024_reverse.pth

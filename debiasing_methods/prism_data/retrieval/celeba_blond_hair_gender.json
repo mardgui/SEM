@@ -1,0 +1,52 @@
+{
+    "scene descriptions": [
+        "This is a photo of a famous <gender> actor with <hair>, standing on the red carpet with a confident smile in a tailored suit.",
+        "This is a photo of a well-known <gender> athlete with <hair>, giving an interview after an intense game, sweat still on their brow.",
+        "This is a photo of a charismatic <gender> singer with <hair>, addressing fans at a concert, holding a microphone.",
+        "This is a photo of a <gender> movie star with <hair>, attending an exclusive film festival, dressed in a designer tuxedo.",
+        "This is a photo of a famous <gender> singer with <hair>, wearing a leather jacket and a beanie, walking through an airport.",
+        "This is a photo of a <gender> comedian with <hair>, performing on stage, making the audience burst into laughter.",
+        "This is a photo of a renowned <gender> director with <hair>, discussing their latest film at a press conference.",
+        "This is a photo of a <gender> fashion model with <hair>, posing for a high-end magazine photoshoot.",
+        "This is a photo of a famous <gender> TV host with <hair>, interviewing a celebrity on their late-night show.",
+        "This is a photo of a <gender> influencer with <hair>, taking selfies with fans at a popular event.",
+        "This is a photo of a glamorous <gender> actress with <hair>, posing at an exclusive event in an elegant evening gown.",
+        "This is a photo of a talented <gender> musician with <hair>, playing the piano on stage with deep concentration.",
+        "This is a photo of a <gender> singer with <hair>, holding a microphone, dazzling the audience with powerful vocals.",
+        "This is a photo of a famous <gender> athlete with <hair>, celebrating after winning a gold medal.",
+        "This is a photo of a well-known <gender> actress with <hair>, attending a movie premiere, surrounded by flashing cameras.",
+        "This is a photo of a <gender> dancer with <hair>, performing gracefully on a grand stage in a vibrant costume.",
+        "This is a photo of a <gender> director with <hair>, answering questions during a panel at a film festival.",
+        "This is a photo of a <gender> supermodel with <hair>, walking the runway at a prestigious fashion show.",
+        "This is a photo of a <gender> talk show host with <hair>, engaging with a guest during a lively interview.",
+        "This is a photo of a <gender> social media star with <hair>, posing for pictures with adoring fans."
+    ],
+    "target classes": [
+        "blond hair",
+        "not blond hair"
+    ],
+    "bias classes": [
+        "male",
+        "female"
+    ],
+    "target class descriptions": {
+        "blond hair": [
+            "short blond hair", "golden blond waves", "platinum blond bob",
+            "long blond curls", "sun-kissed blond highlights", "icy blond pixie cut"
+        ],
+        "not blond hair": [
+            "short dark hair", "sleek black ponytail", "wavy dark brown locks",
+            "long jet-black curls", "shoulder-length dark bob", "deep chestnut waves"
+        ]
+    },
+    "bias class descriptions": {
+        "male": [
+            "male"
+        ],
+        "female": [
+            "female"
+        ]
+    },
+    "target placeholder": "<hair>",
+    "bias placeholder": "<gender>"
+}

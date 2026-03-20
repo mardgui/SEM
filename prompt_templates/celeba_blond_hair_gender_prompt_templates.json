@@ -1,0 +1,275 @@
+{
+  "extra prompts": {
+    "orth_proj": {
+      "spurious prompts": [
+        "A photo of a male.",
+        "A photo of a male celebrity.",
+        "A photo of a man.",
+        "A photo of a female.",
+        "A photo of a female celebrity.",
+        "A photo of a woman."
+      ]
+    },
+    "orth_cali": {
+      "spurious prompts": [
+        "A photo of a male.",
+        "A photo of a male celebrity.",
+        "A photo of a man.",
+        "A photo of a female.",
+        "A photo of a female celebrity.",
+        "A photo of a woman."
+      ],
+      "candidate prompts": [
+        "A photo of a male celebrity with dark hair.",
+        "A photo of a female celebrity with dark hair.",
+        "A photo of a male celebrity with blond hair.",
+        "A photo of a female celebrity with blond hair."
+      ],
+      "S": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "bendvlm": {
+      "spurious prompts": [
+        "A photo of a male celebrity.",
+        "A photo of a female celebrity."
+      ],
+      "augmentations": [
+        "A photo of a male celebrity with dark hair.",
+        "A photo of a female celebrity with dark hair.",
+        "A photo of a male celebrity with blond hair.",
+        "A photo of a female celebrity with blond hair."
+      ]
+    },
+    "prism": {},
+    "prism_mini": {
+      "spurious prompts": [
+        "A photo of a male.",
+        "A photo of a male celebrity.",
+        "A photo of a man.",
+        "A photo of a female.",
+        "A photo of a female celebrity.",
+        "A photo of a woman."
+      ]
+    },
+    "roboshot": {
+      "harmful prompts": [
+        [
+          "a person with dark skin tone",
+          "a person with light skin tone"
+        ],
+        [
+          "a person with angular strong facial features",
+          "a person with soft round facial features"
+        ],
+        [
+          "a person with high perceived attractiveness",
+          "a person with low perceived attractiveness"
+        ],
+        [
+          "a person with serious personality traits",
+          "a person with loving personality traits"
+        ],
+        [
+          "a person with high intelligence",
+          "a person with low intelligence"
+        ],
+        [
+          "a person with high confidence level",
+          "a person with low confidence level"
+        ],
+        [
+          "a person with a deep complexion.",
+          "a person with a fair complexion."
+        ],
+        [
+          "a person with sharp, prominent facial features",
+          "a person with a gentle, rounded face"
+        ],
+        [
+          "an individual with deep-seated character",
+          "a person who is caring and kind."
+        ],
+        [
+          "a highly intelligent individual.",
+          "a person of limited mental capacity."
+        ],
+        [
+          "a person who is sure of themselves.",
+          "a person who lacks self-assurance"
+        ]
+      ],
+      "helpful prompts": [
+        [
+          "a person with dark hair",
+          "a person with blond hair"
+        ],
+        [
+          "a person with coarse hair texture",
+          "a person with smooth hair texture"
+        ],
+        [
+          "a person with lighter eye color",
+          "a person with darker eye color"
+        ]
+      ]
+    },
+    "sem": {
+      "bias prompts": {
+        "Male": [
+          "A portrait of a man.",
+          "A close-up of a man's face.",
+          "A simple headshot of a male.",
+          "A man smiling at the camera.",
+          "A man looking serious.",
+          "A person who is male.",
+          "A man with a beard.",
+          "A man with a mustache.",
+          "A man with short hair.",
+          "A young boy.",
+          "A teenage boy.",
+          "An adult man.",
+          "An elderly man.",
+          "A photo of a father.",
+          "A photo of a son.",
+          "A man wearing a suit and tie.",
+          "A man with masculine facial features.",
+          "A group of men.",
+          "A photo of him.",
+          "A man's face, profile view."
+        ],
+        "Female": [
+          "A portrait of a woman.",
+          "A close-up of a woman's face.",
+          "A simple headshot of a female.",
+          "A woman smiling at the camera.",
+          "A woman looking serious.",
+          "A person who is female.",
+          "A woman with long hair.",
+          "A woman wearing makeup.",
+          "A woman wearing lipstick.",
+          "A young girl.",
+          "A teenage girl.",
+          "An adult woman.",
+          "An elderly woman.",
+          "A photo of a mother.",
+          "A photo of a daughter.",
+          "A woman wearing a dress.",
+          "A woman with feminine facial features.",
+          "A group of women.",
+          "A photo of her.",
+          "A woman's face, profile view."
+        ]
+      },
+      "extra class prompts": [
+        [
+          "A photo of a celebrity with dark hair.",
+          "A famous person with dark hair.",
+          "A public figure with dark hair.",
+          "A celebrity with black hair.",
+          "A celebrity with brown hair.",
+          "A well-known person with brunette hair.",
+          "An image of a celebrity with dark-colored hair.",
+          "A celebrity whose hair is dark.",
+          "A person who is a celebrity and has dark hair.",
+          "A depiction of a celebrity with dark hair."
+        ],
+        [
+          "A photo of a celebrity with blond hair.",
+          "A famous person with blond hair.",
+          "A public figure with blond hair.",
+          "A celebrity with light-colored hair.",
+          "A celebrity with fair hair.",
+          "A well-known person with blond hair.",
+          "An image of a celebrity with blond-colored hair.",
+          "A celebrity whose hair is blond.",
+          "A person who is a celebrity and has blond hair.",
+          "A depiction of a celebrity with blond hair."
+        ]
+      ]
+    },
+    "bendsem":  {
+      "bias prompts": {
+        "Male": [
+          "A portrait of a man.",
+          "A close-up of a man's face.",
+          "A simple headshot of a male.",
+          "A man smiling at the camera.",
+          "A man looking serious.",
+          "A person who is male.",
+          "A man with a beard.",
+          "A man with a mustache.",
+          "A man with short hair.",
+          "A young boy.",
+          "A teenage boy.",
+          "An adult man.",
+          "An elderly man.",
+          "A photo of a father.",
+          "A photo of a son.",
+          "A man wearing a suit and tie.",
+          "A man with masculine facial features.",
+          "A group of men.",
+          "A photo of him.",
+          "A man's face, profile view."
+        ],
+        "Female": [
+          "A portrait of a woman.",
+          "A close-up of a woman's face.",
+          "A simple headshot of a female.",
+          "A woman smiling at the camera.",
+          "A woman looking serious.",
+          "A person who is female.",
+          "A woman with long hair.",
+          "A woman wearing makeup.",
+          "A woman wearing lipstick.",
+          "A young girl.",
+          "A teenage girl.",
+          "An adult woman.",
+          "An elderly woman.",
+          "A photo of a mother.",
+          "A photo of a daughter.",
+          "A woman wearing a dress.",
+          "A woman with feminine facial features.",
+          "A group of women.",
+          "A photo of her.",
+          "A woman's face, profile view."
+        ]
+      },
+      "extra class prompts": [
+        [
+          "A photo of a celebrity with dark hair.",
+          "A famous person with dark hair.",
+          "A public figure with dark hair.",
+          "A celebrity with black hair.",
+          "A celebrity with brown hair.",
+          "A well-known person with brunette hair.",
+          "An image of a celebrity with dark-colored hair.",
+          "A celebrity whose hair is dark.",
+          "A person who is a celebrity and has dark hair.",
+          "A depiction of a celebrity with dark hair."
+        ],
+        [
+          "A photo of a celebrity with blond hair.",
+          "A famous person with blond hair.",
+          "A public figure with blond hair.",
+          "A celebrity with light-colored hair.",
+          "A celebrity with fair hair.",
+          "A well-known person with blond hair.",
+          "An image of a celebrity with blond-colored hair.",
+          "A celebrity whose hair is blond.",
+          "A person who is a celebrity and has blond hair.",
+          "A depiction of a celebrity with blond hair."
+        ]
+      ]
+    },
+    "vanilla": {},
+    "zsdebias": {}
+  }
+}

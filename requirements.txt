@@ -1,0 +1,10 @@
+git+https://github.com/openai/CLIP.git
+pandas
+scikit-learn
+scipy
+pyarrow
+pillow
+tqdm
+pyyaml
+matplotlib
+seaborn

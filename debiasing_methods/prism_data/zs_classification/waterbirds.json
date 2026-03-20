@@ -1,0 +1,33 @@
+{
+    "scene descriptions": [
+        "A photo of a <bird> in a <background>."
+    ],
+    "target classes": [
+        "land bird",
+        "water bird"
+    ],
+    "bias classes": [
+        "land background",
+        "water background"
+    ],
+    "target class descriptions": {
+        "land bird": [
+            "sparrow", "robin", "finch", "woodpecker", "canary", "hawk", "falcon", "eagle", "owl", "crow", "pigeon",
+            "dove", "cardinal", "jay", "wren", "magpie", "partridge", "quail", "pheasant", "mockingbird"
+        ],
+        "water bird": [
+            "duck", "swan", "pelican", "heron", "flamingo", "seagull", "penguin", "albatross", "cormorant", "grebe",
+            "loon", "kingfisher", "stork", "crane", "ibis", "sandpiper", "tern", "plover", "puffin", "shearwater"
+        ]
+    },
+    "bias class descriptions": {
+        "land background": [
+            "forest", "field", "desert", "mountain", "garden", "savannah", "park", "backyard", "canyon", "cliff"
+        ],
+        "water background": [
+            "lake", "sea", "ocean", "river", "pond", "stream", "marsh", "bay", "lagoon", "waterfall"
+        ]
+    },
+    "target placeholder": "<bird>",
+    "bias placeholder": "<background>"
+}

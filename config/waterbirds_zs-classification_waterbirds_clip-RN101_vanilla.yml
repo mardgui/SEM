@@ -1,0 +1,7 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: RN101
+method: vanilla
+normalize: true

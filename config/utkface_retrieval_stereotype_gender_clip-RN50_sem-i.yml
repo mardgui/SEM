@@ -1,0 +1,11 @@
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: gender
+model_ID: RN50
+method: sem
+sem_version: SEM_i
+normalize: true
+sae_weights_path: debiasing_methods/sae_weights/MSAE_RN50_1024_16384_512x1024_reverse.pth

@@ -1,0 +1,9 @@
+dataset_name: 'celeba'
+dataset_path: './data/CelebA'
+task: 'retrieval'
+retrieval_K: 500
+query_type: 'hair'
+bias_attribute: 'gender'
+model_ID: 'ViT-B/16'
+method: 'vanilla'
+normalize: true

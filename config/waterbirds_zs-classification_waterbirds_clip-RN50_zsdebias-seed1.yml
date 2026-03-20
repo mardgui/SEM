@@ -1,0 +1,9 @@
+class_setting: waterbirds
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+hidden_num: 2
+method: zsdebias
+model_ID: RN50
+normalize: false
+seed: 1
+task: zs_classification

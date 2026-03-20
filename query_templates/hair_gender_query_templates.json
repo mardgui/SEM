@@ -1,0 +1,850 @@
+{
+  "Blond_Hair": {
+    "query": "A photo of a celebrity with blond hair.",
+    "extra prompts": {
+      "orth_proj": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "orth_cali": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "candidate prompts": [
+          "A photo of a male celebrity with blond hair.",
+          "A photo of a female celebrity with blond hair."
+        ]
+      },
+      "bendvlm": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "augmentations": [
+          "A photo of a male celebrity with blond hair.",
+          "A photo of a female celebrity with blond hair."
+        ]
+      },
+      "prism": {},
+      "prism_mini": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "roboshot": {
+        "harmful prompts": [
+          [
+            "a photo of a smart celebrity with blond hair",
+            "a photo of an unintelligent celebrity with blond hair"
+          ],
+          [
+            "a photo of a fun-loving celebrity with blond hair",
+            "a photo of a serious celebrity with blond hair"
+          ],
+          [
+            "a photo of a seductive celebrity with blond hair",
+            "a photo of a modest celebrity with blond hair"
+          ],
+          [
+            "a photo of a highly attractive celebrity with blond hair",
+            "a photo of an unattractive celebrity with blond hair"
+          ],
+          [
+            "a photo of a white celebrity with blond hair",
+            "a photo of a celebrity of color with blond hair"
+          ],
+          [
+            "a photo of a vain celebrity with blond hair",
+            "a photo of a humble celebrity with blond hair"
+          ]
+        ],
+        "helpful prompts": [
+          [
+            "a photo of a celebrity with blond hair",
+            "a photo of a celebrity with light brown hair"
+          ],
+          [
+            "a photo of a celebrity with golden blond hair",
+            "a photo of a celebrity with platinum blond hair"
+          ],
+          [
+            "a photo of a celebrity with blond hair",
+            "a photo of a celebrity with strawberry blond hair"
+          ],
+          [
+            "a celebrity with yellow-toned hair",
+            "a celebrity with orange-toned hair"
+          ],
+          [
+            "a celebrity with naturally blond hair",
+            "a celebrity with dyed blond hair"
+          ]
+        ]
+      },
+      "sem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with blond hair.",
+            "A famous person with blond hair.",
+            "A public figure with blond hair.",
+            "A celebrity with blond hair posing for a picture.",
+            "A celebrity with blond hair on a red carpet.",
+            "A celebrity with blond hair holding an award.",
+            "An image of a famous person with blond hair.",
+            "A person who is a celebrity and has blond hair.",
+            "A well-known person with light-colored, blond hair.",
+            "A depiction of a celebrity with blond hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      },
+      "vanilla": {},
+      "zsdebias": {},
+      "bendsem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with blond hair.",
+            "A famous person with blond hair.",
+            "A public figure with blond hair.",
+            "A celebrity with blond hair posing for a picture.",
+            "A celebrity with blond hair on a red carpet.",
+            "A celebrity with blond hair holding an award.",
+            "An image of a famous person with blond hair.",
+            "A person who is a celebrity and has blond hair.",
+            "A well-known person with light-colored, blond hair.",
+            "A depiction of a celebrity with blond hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      }
+    }
+  },
+  "Black_Hair": {
+    "query": "A photo of a celebrity with black hair.",
+    "extra prompts": {
+      "orth_proj": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "orth_cali": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "candidate prompts": [
+          "A photo of a male celebrity with black hair.",
+          "A photo of a female celebrity with black hair."
+        ]
+      },
+      "bendvlm": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "augmentations": [
+          "A photo of a male celebrity with black hair.",
+          "A photo of a female celebrity with black hair."
+        ]
+      },
+      "prism": {},
+      "prism_mini": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "roboshot": {
+        "harmful prompts": [
+          [
+            "a photo of a celebrity with black-colored hair",
+            "a photo of a Black celebrity"
+          ],
+          [
+            "a photo of a celebrity with black hair",
+            "a photo of an Asian celebrity"
+          ],
+          [
+            "a photo of a mysterious celebrity with black hair",
+            "a photo of an open celebrity with black hair"
+          ],
+          [
+            "a photo of a serious celebrity with black hair",
+            "a photo of a playful celebrity with black hair"
+          ],
+          [
+            "a photo of an angry celebrity with black hair",
+            "a photo of a calm celebrity with black hair"
+          ],
+          [
+            "a celebrity with straight black hair",
+            "a celebrity with coily black hair"
+          ]
+        ],
+        "helpful prompts": [
+          [
+            "a photo of a celebrity with black hair",
+            "a photo of a celebrity with dark brown hair"
+          ],
+          [
+            "a celebrity with jet black hair",
+            "a celebrity with espresso brown hair"
+          ],
+          [
+            "a celebrity with deep black hair with no highlights",
+            "a celebrity with dark brown hair with warm highlights"
+          ],
+          [
+            "a photo of a celebrity with natural black hair",
+            "a photo of a celebrity with blue-black hair"
+          ]
+        ]
+      },
+      "sem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with black hair.",
+            "A famous person with black hair.",
+            "A public figure with black hair.",
+            "A celebrity with black hair smiling for the camera.",
+            "A celebrity with black hair at an event.",
+            "A celebrity with black hair wearing formal attire.",
+            "An image of a famous person with black hair.",
+            "A person who is a celebrity and has black hair.",
+            "A well-known person with dark, black hair.",
+            "A depiction of a celebrity with black hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      },
+      "vanilla": {},
+      "zsdebias": {},
+      "bendsem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with black hair.",
+            "A famous person with black hair.",
+            "A public figure with black hair.",
+            "A celebrity with black hair smiling for the camera.",
+            "A celebrity with black hair at an event.",
+            "A celebrity with black hair wearing formal attire.",
+            "An image of a famous person with black hair.",
+            "A person who is a celebrity and has black hair.",
+            "A well-known person with dark, black hair.",
+            "A depiction of a celebrity with black hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      }
+    }
+  },
+  "Brown_Hair": {
+    "query": "A photo of a celebrity with brown hair.",
+    "extra prompts": {
+      "orth_proj": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "orth_cali": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "candidate prompts": [
+          "A photo of a male celebrity with brown hair.",
+          "A photo of a female celebrity with brown hair."
+        ]
+      },
+      "bendvlm": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "augmentations": [
+          "A photo of a male celebrity with brown hair.",
+          "A photo of a female celebrity with brown hair."
+        ]
+      },
+      "prism": {},
+      "prism_mini": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "roboshot": {
+        "harmful prompts": [
+          [
+            "a photo of a plain celebrity with brown hair",
+            "a photo of an exciting celebrity with brown hair"
+          ],
+          [
+            "a photo of a serious celebrity with brown hair",
+            "a photo of a fun-loving celebrity with brown hair"
+          ],
+          [
+            "a photo of an intelligent celebrity with brown hair",
+            "a photo of an unintelligent celebrity with brown hair"
+          ],
+          [
+            "a photo of a girl-next-door celebrity with brown hair",
+            "a photo of a glamorous celebrity with brown hair"
+          ],
+          [
+            "a photo of a reliable celebrity with brown hair",
+            "a photo of an unreliable celebrity with brown hair"
+          ]
+        ],
+        "helpful prompts": [
+          [
+            "a photo of a celebrity with light brown hair",
+            "a photo of a celebrity with dark blond hair"
+          ],
+          [
+            "a photo of a celebrity with dark brown hair",
+            "a photo of a celebrity with black hair"
+          ],
+          [
+            "a photo of a celebrity with brown hair",
+            "a photo of a celebrity with auburn hair"
+          ],
+          [
+            "a celebrity with orange-toned brown hair",
+            "a celebrity with yellow-toned blond hair"
+          ],
+          [
+            "a celebrity with light brown hair",
+            "a celebrity with dark brown hair"
+          ]
+        ]
+      },
+      "sem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with brown hair.",
+            "A famous person with brown hair.",
+            "A public figure with brown hair.",
+            "A celebrity with brown hair waving.",
+            "A celebrity with brown hair at a movie premiere.",
+            "A celebrity with brown hair wearing sunglasses.",
+            "An image of a famous person with brown hair.",
+            "A person who is a celebrity and has brown hair.",
+            "A well-known person with brunette hair.",
+            "A depiction of a celebrity with brown hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      },
+      "vanilla": {},
+      "zsdebias": {},
+      "bendsem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with brown hair.",
+            "A famous person with brown hair.",
+            "A public figure with brown hair.",
+            "A celebrity with brown hair waving.",
+            "A celebrity with brown hair at a movie premiere.",
+            "A celebrity with brown hair wearing sunglasses.",
+            "An image of a famous person with brown hair.",
+            "A person who is a celebrity and has brown hair.",
+            "A well-known person with brunette hair.",
+            "A depiction of a celebrity with brown hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      }
+    }
+  },
+  "Gray_Hair": {
+    "query": "A photo of a celebrity with gray hair.",
+    "extra prompts": {
+      "orth_proj": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "orth_cali": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "candidate prompts": [
+          "A photo of a male celebrity with gray hair.",
+          "A photo of a female celebrity with gray hair."
+        ]
+      },
+      "bendvlm": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ],
+        "augmentations": [
+          "A photo of a male celebrity with gray hair.",
+          "A photo of a female celebrity with gray hair."
+        ]
+      },
+      "prism": {},
+      "prism_mini": {
+        "spurious prompts": [
+          "A photo of a male celebrity.",
+          "A photo of a female celebrity."
+        ]
+      },
+      "roboshot": {
+        "harmful prompts": [
+          [
+            "a photo of an old celebrity with gray hair",
+            "a photo of a young celebrity with gray hair"
+          ],
+          [
+            "a photo of a distinguished male celebrity with gray hair",
+            "a photo of an old female celebrity with gray hair"
+          ],
+          [
+            "a photo of an attractive celebrity with gray hair",
+            "a photo of an unattractive celebrity with gray hair"
+          ],
+          [
+            "a photo of a wise celebrity with gray hair",
+            "a photo of a foolish celebrity with gray hair"
+          ],
+          [
+            "a photo of a mean celebrity with gray hair",
+            "a photo of a kind celebrity with gray hair"
+          ],
+          [
+            "a celebrity with dull gray hair",
+            "a celebrity with vibrant gray hair"
+          ]
+        ],
+        "helpful prompts": [
+          [
+            "a photo of a celebrity with gray hair",
+            "a photo of a celebrity with platinum blond hair"
+          ],
+          [
+            "a photo of a celebrity with natural gray hair",
+            "a photo of a celebrity with dyed silver hair"
+          ],
+          [
+            "a celebrity with a mix of white and dark hair",
+            "a celebrity with fully white hair"
+          ],
+          [
+            "a celebrity with charcoal gray hair",
+            "a celebrity with light silver hair"
+          ],
+          [
+            "a photo of a celebrity with gray hair",
+            "a photo of a celebrity with ash blond hair"
+          ]
+        ]
+      },
+      "sem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with gray hair.",
+            "A famous person with gray hair.",
+            "A public figure with gray hair.",
+            "A celebrity with gray hair giving a speech.",
+            "A celebrity with gray hair at an awards ceremony.",
+            "A well-known person with gray hair.",
+            "An image of a famous person with gray hair.",
+            "A person who is a celebrity and has gray hair.",
+            "A well-known person with silver or gray hair.",
+            "A depiction of a celebrity with gray hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      },
+      "vanilla": {},
+      "zsdebias": {},
+      "bendsem": {
+        "extra class prompts": [
+          [
+            "A photo of a celebrity with gray hair.",
+            "A famous person with gray hair.",
+            "A public figure with gray hair.",
+            "A celebrity with gray hair giving a speech.",
+            "A celebrity with gray hair at an awards ceremony.",
+            "A well-known person with gray hair.",
+            "An image of a famous person with gray hair.",
+            "A person who is a celebrity and has gray hair.",
+            "A well-known person with silver or gray hair.",
+            "A depiction of a celebrity with gray hair."
+          ]
+        ],
+        "bias prompts": {
+          "Male": [
+            "A portrait of a man.",
+            "A close-up of a man's face.",
+            "A simple headshot of a male.",
+            "A man smiling at the camera.",
+            "A man looking serious.",
+            "A person who is male.",
+            "A man with a beard.",
+            "A man with a mustache.",
+            "A man with short hair.",
+            "A young boy.",
+            "A teenage boy.",
+            "An adult man.",
+            "An elderly man.",
+            "A photo of a father.",
+            "A photo of a son.",
+            "A man wearing a suit and tie.",
+            "A man with masculine facial features.",
+            "A group of men.",
+            "A photo of him.",
+            "A man's face, profile view."
+          ],
+          "Female": [
+            "A portrait of a woman.",
+            "A close-up of a woman's face.",
+            "A simple headshot of a female.",
+            "A woman smiling at the camera.",
+            "A woman looking serious.",
+            "A person who is female.",
+            "A woman with long hair.",
+            "A woman wearing makeup.",
+            "A woman wearing lipstick.",
+            "A young girl.",
+            "A teenage girl.",
+            "An adult woman.",
+            "An elderly woman.",
+            "A photo of a mother.",
+            "A photo of a daughter.",
+            "A woman wearing a dress.",
+            "A woman with feminine facial features.",
+            "A group of women.",
+            "A photo of her.",
+            "A woman's face, profile view."
+          ]
+        }
+      }
+    }
+  }
+}

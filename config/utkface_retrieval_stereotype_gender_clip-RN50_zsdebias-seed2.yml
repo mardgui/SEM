@@ -1,0 +1,11 @@
+bias_attribute: gender
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+hidden_num: 2
+method: zsdebias
+model_ID: RN50
+normalize: false
+query_type: stereotype
+retrieval_K: 500
+seed: 2
+task: retrieval

@@ -1,0 +1,9 @@
+class_setting: celeba_blond_hair_gender
+dataset_name: celeba
+dataset_path: ./data/CelebA
+hidden_num: 2
+method: zsdebias
+model_ID: ViT-L/14@336px
+normalize: false
+seed: 2
+task: zs_classification

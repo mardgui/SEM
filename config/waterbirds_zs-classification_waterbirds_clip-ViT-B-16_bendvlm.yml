@@ -1,0 +1,8 @@
+dataset_name: waterbirds
+dataset_path: ./data/Waterbirds
+task: zs_classification
+class_setting: waterbirds
+model_ID: ViT-B/16
+method: bendvlm
+normalize: true
+num_neighbors: 100

@@ -1,0 +1,11 @@
+dataset_name: utkface
+dataset_path: ./data/UTKFace
+task: retrieval
+retrieval_K: 500
+query_type: stereotype
+bias_attribute: gender
+model_ID: ViT-B/16
+method: sem
+sem_version: SEM_i
+normalize: true
+sae_weights_path: debiasing_methods/sae_weights/MSAE_ViT-B-16_512_16384_256x512_reverse.pth

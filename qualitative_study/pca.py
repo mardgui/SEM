@@ -159,7 +159,6 @@ for gender in genders:
     for profession in professions:
         all_input_prompts.append(template.format(gender=gender + ' ', profession=profession.lower()))
 
-# Add neutral prompts
 for profession in professions:
     neutral_prompt = replace_a_with_an(template.format(gender='', profession=profession.lower()))
     all_input_prompts.append(neutral_prompt)
@@ -259,8 +258,6 @@ import pandas as pd
 import seaborn as sns
 
 
-# sns.set_theme(style="whitegrid")
-
 df = pd.DataFrame({
     'PC1': np.concat([base_clip_embeddings_pca[:, 0], debiased_with_orth_proj_pca[:, 0], debiased_with_ours_pca[:, 0]]),
     'PC2': np.concat([base_clip_embeddings_pca[:, 1], debiased_with_orth_proj_pca[:, 1], debiased_with_ours_pca[:, 1]]),
@@ -269,81 +266,15 @@ df = pd.DataFrame({
     'Version': ['Original CLIP'] * 300 + ['Orth-Proj'] * 300 + ['SEM$_b$ (ours)'] * 300
 })
 
-# g = sns.FacetGrid(df, col='version', hue='gender')
-# g.map(sns.scatterplot, 'x', 'y')
-# plt.tight_layout()
-
-# output_filename = 'quali.pdf'
-# plt.savefig(output_filename, bbox_inches='tight')
-
-# plt.style.use('seaborn-v0_8-paper') # Use a good style
-# fig, axes = plt.subplots(1, 3, figsize=(10, 4), sharex=True, sharey=True) # 1 row, 3 columns
-
-# plot_versions = ['Original CLIP', 'Orth-Proj', 'SEM$_b$ (ours)']
-# colors = sns.color_palette("Set2", 3) # Two distinct colors for genders
-# gender_map = {'F': colors[0], 'M': colors[1], 'Neutral': colors[2]}
-
-# for i, version in enumerate(plot_versions):
-#     ax = axes[i]
-#     subset_df = df[df['Version'] == version]
-
-#     # Plot each gender separately to control legend entry
-#     for gender_val, color_val in gender_map.items():
-#         gender_subset = subset_df[subset_df['Gender'] == gender_val]
-#         ax.scatter(
-#             gender_subset['PC1'],
-#             gender_subset['PC2'], 
-#             color=color_val, 
-#             label=gender_val.capitalize(),
-#             alpha=0.7,
-#             s=50, # Size of points
-#             edgecolors='w', # White edge for better visibility
-#             linewidth=0.5
-#         )
-
-#     ax.set_title(version, fontsize=18, fontweight='bold', pad=15)
-#     ax.set_xlabel('Principal Component 1', fontsize=12)
-#     ax.set_ylabel('Principal Component 2', fontsize=12)
-#     ax.grid(True, linestyle=':', alpha=0.6)
-#     sns.despine(ax=ax, offset=10) # Clean up borders
-
-# # Add a single legend for the entire figure
-# handles, labels = axes[0].get_legend_handles_labels() # Get handles/labels from first subplot
-# fig.legend(handles, labels, loc='lower left', bbox_to_anchor=(0.0725, 0.14), 
-#            title='Gender', frameon=True, fontsize=12, title_fontsize=12, framealpha=0.6)
-
-# # plt.suptitle('PCA of Gendered Profession Embeddings After Debiasing', fontsize=16, fontweight='bold', y=1.02)
-# plt.tight_layout(rect=[0, 0, 1, 0.98]) # Adjust layout to make space for suptitle
-
-# output_filename = 'pca_profession_gender.pdf'
-# plt.savefig(output_filename, bbox_inches='tight')
-
-# print(f"Plot saved to '{output_filename}'")
-
-
-# base_clip_embeddings_neutral = base_clip_embeddings[-100:]
-
-# debiased_with_orth_proj_female = debiased_with_orth_proj[:100]
-# debiased_with_orth_proj_male = debiased_with_orth_proj[100:-100]
-
-# debiased_with_ours_female = debiased_with_ours[:100]
-# debiased_with_ours_male = debiased_with_ours[100:-100]
-
-# --- START OF PLOTTING CHANGES ---
-
-# --- 1. Set global font to serif ---
 matplotlib.rcParams.update({
     'font.family': 'serif',
-    'mathtext.fontset': 'stix' # Use STIX serif font for math
+    'mathtext.fontset': 'stix'
 })
 
-# --- 2. Create the figure (wider and less tall) ---
-# --- CHANGED: Shrunk figsize to make fonts relatively larger ---
-fig, axes = plt.subplots(1, 3, figsize=(12, 3.5), sharex=True, sharey=True) # Was (18, 4)
+fig, axes = plt.subplots(1, 3, figsize=(12, 3.5), sharex=True, sharey=True)
 
 plot_versions = ['Original CLIP', 'Orth-Proj', 'SEM$_b$ (ours)']
-# --- 3. Use a vibrant, standard color palette ---
-colors = sns.color_palette("colorblind", 3) 
+colors = sns.color_palette("colorblind", 3)
 gender_map = {'Female': colors[0], 'Male': colors[1], 'Neutral': colors[2]}
 
 for i, version in enumerate(plot_versions):
@@ -354,16 +285,15 @@ for i, version in enumerate(plot_versions):
         gender_subset = subset_df[subset_df['Gender'] == gender_val]
         ax.scatter(
             gender_subset['PC1'],
-            gender_subset['PC2'], 
-            color=color_val, 
+            gender_subset['PC2'],
+            color=color_val,
             label=gender_val.capitalize(),
             alpha=0.6,
-            s=40, # Kept point size
+            s=40,
             edgecolors='w',
             linewidth=0.5
         )
 
-    # --- FONT SIZES ARE KEPT LARGE ---
     ax.set_title(version, fontsize=18, fontweight='bold', pad=15)
     ax.set_xlabel('Principal Component 1', fontsize=12)
     ax.set_ylabel('Principal Component 2', fontsize=12)
@@ -371,23 +301,21 @@ for i, version in enumerate(plot_versions):
     sns.despine(ax=ax, offset=10)
     ax.tick_params(axis='both', which='major', labelsize=12)
 
-# --- 4. Move legend to the right side (font size increased) ---
 handles, labels = axes[0].get_legend_handles_labels()
 fig.legend(handles, labels, 
            loc='center left',
-           bbox_to_anchor=(1, 0.5), 
-           title='Gender', 
-           frameon=True, 
-           fontsize=15,      # Increased from 12
-           title_fontsize=16, # Kept large
+           bbox_to_anchor=(1, 0.5),
+           title='Gender',
+           frameon=True,
+           fontsize=15,
+           title_fontsize=16,
            framealpha=0.8)
 
-# --- 5. Adjust layout ---
 plt.subplots_adjust(
     left=0.05,
     right=0.90,
-    bottom=0.20, # Increased bottom margin for label
-    top=0.80,    # Increased top margin for title
+    bottom=0.20,
+    top=0.80,
     wspace=0.1
 )
 
